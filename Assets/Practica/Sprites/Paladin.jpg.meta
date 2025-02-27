@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 54d5ad0ef1e67484b8b0bd9be9c96253
+guid: b6cee5b858082eb478ec80f0560ceb2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -169549973756943938
-    second: 356px-Leviathan_0
+      213: -8594515011827703002
+    second: Paladin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 356px-Leviathan_0
+      name: Paladin_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 356
-        height: 160
+        width: 755
+        height: 833
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb16a8a7233a5adf0800000000000000
-      internalID: -169549973756943938
+      spriteID: 6236f37e1262ab880800000000000000
+      internalID: -8594515011827703002
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      356px-Leviathan_0: -169549973756943938
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
