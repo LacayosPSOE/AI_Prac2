@@ -2668,7 +2668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a57a36a0e007214fada8914b6339789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scareRange: 400
+  scareRange: 100
   timer: 0
   paladin: {fileID: 493386573}
   guide: {fileID: 1799660487}
