@@ -36,41 +36,19 @@ public class FSM_Skeleton_Scare : FiniteStateMachine
             () => { }  
         );
 
-        /* STAGE 2: create the transitions with their logic(s)
-         * ---------------------------------------------------
 
-        Transition varName = new Transition("TransitionName",
-            () => { }, // write the condition checkeing code in {}
-            () => { }  // write the on trigger code in {} if any. Remove line if no on trigger action needed
-        );
-
-        */
         Transition chaseGuide = new Transition("Chase_Guide",
-            () => { return blackboard.timer <= 0 && SensingUtils.DistanceToTarget(gameObject, blackboard.guide) <= blackboard.scareRange;  }, // write the condition checkeing code in {}
-            () => { }  // write the on trigger code in {} if any. Remove line if no on trigger action needed
+            () => { return blackboard.timer <= 0 && SensingUtils.DistanceToTarget(gameObject, blackboard.guide) <= blackboard.scareRange;  }, 
+            () => { }  
         );
                 Transition quitChasingGuide = new Transition("Quit_Chasing_Guide",
-            () => {return blackboard.timer >= 5;}, // write the condition checkeing code in {}
-            () => { }  // write the on trigger code in {} if any. Remove line if no on trigger action needed
+            () => {return blackboard.timer >= 5;},
+            () => { }  
         );
-
-        /* STAGE 3: add states and transitions to the FSM 
-         * ----------------------------------------------
-
-        AddStates(...);
-
-        AddTransition(sourceState, transition, destinationState);
-
-         */ 
         AddStates(chasingPaladin, scareGuide);
         AddTransition(chasingPaladin, chaseGuide, scareGuide);
         AddTransition(scareGuide, quitChasingGuide, chasingPaladin);
 
-        /* STAGE 4: set the initial state
-         
-        initialState = ... 
-
-         */
          initialState = chasingPaladin;
 
     }

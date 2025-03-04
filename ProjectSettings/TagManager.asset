@@ -42,8 +42,7 @@ TagManager:
   - TARGETLOC
   - TRAPPED_MOUSE
   - COHESIVE
-  - FISH
-  - PLAYER
+  - POINT
   layers:
   - Default
   - TransparentFX
