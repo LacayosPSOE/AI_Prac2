@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runRange: 45
-  cultistRange: 15
+  cultistRange: 30
   reachedRange: 5
   timer: 0
   runDistance: 100
@@ -3207,7 +3207,7 @@ MonoBehaviour:
   scareRange: 65
   timer: 0
   paladin: {fileID: 493386573}
-  guide: {fileID: 0}
+  guide: {fileID: 327334034}
 --- !u!1 &727093000
 GameObject:
   m_ObjectHideFlags: 0
@@ -5290,6 +5290,8 @@ GameObject:
   - component: {fileID: 1162364870}
   - component: {fileID: 1162364871}
   - component: {fileID: 1162364872}
+  - component: {fileID: 1162364874}
+  - component: {fileID: 1162364873}
   m_Layer: 0
   m_Name: DungeonWall_0 (25)
   m_TagString: Untagged
@@ -5306,7 +5308,7 @@ Transform:
   m_GameObject: {fileID: 1162364869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.92, y: -5.69, z: 2.8569665}
+  m_LocalPosition: {x: 6.92, y: -5.69, z: 2.856966}
   m_LocalScale: {x: 1, y: 0.64, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5413,6 +5415,39 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.59, y: 0.8}
   m_EdgeRadius: 0
+--- !u!111 &1162364873
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162364869}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: dde503a921befe44c905d66736abb622, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: dde503a921befe44c905d66736abb622, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!114 &1162364874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162364869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183748dd497aa473a98ff0cd8cb67fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  uniqueID: 8968677982808289857
+  updateError: 1
+  checkTime: 0.2
 --- !u!1 &1173196740
 GameObject:
   m_ObjectHideFlags: 0
